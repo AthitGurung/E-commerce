@@ -1,0 +1,679 @@
+
+/* Declaring variables */
+:root {
+  --grad1: #292929;
+  --grad2: #171717;
+  --pink: #d905d9;
+  --shade: #0cbc81;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header CSS*/
+
+.logo img {
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Navigation Bar for all PAge CSS*/
+nav {
+  position: relative;
+  bottom: 70px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: var(--pink);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Wpopup {
+  width: 700px;
+  height: 50%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: linear-gradient(135deg, var(--grad1), var(--grad2));
+  z-index: 1000;
+}
+
+/* search bar css */
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  position: relative;
+  bottom: 40px;
+}
+
+.input {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 20px;
+  color: var(--white);
+  outline: none;
+  width: 700px;
+  border: var(--white) solid 2px;
+}
+
+
+/* Image Slider CSS */
+#carousel {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 20px;
+}
+
+.slider {
+  width: 90%;
+  height: 450px;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px var(--shade);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Product in home page CSS */
+#product {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 100px;
+}
+
+.product-content {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 28px;
+  color: var(--pink);
+  margin-bottom: 20px;
+}
+
+.product-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shade);
+  transition: transform 0.3s ease;
+  width: 500px;
+  height: 200px;
+}
+
+.product-item img {
+  height: auto;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay h3,
+.overlay p {
+  color: var(--white);
+  text-shadow: 2px 2px 4px black;
+}
+
+/* Review portion of Home page CSS */
+#review {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 100px;
+}
+
+.review-content {
+  text-align: center;
+}
+
+.review-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--shade);
+  margin-bottom: 20px;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin-left: 50px;
+}
+
+/* Footer of All page CSS */
+.footer {
+  background: linear-gradient(135deg, var(--grad2), var(--grad1));
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 25px;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-info h4,
+.footer-links h4,
+.footer-social h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-social .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social .social-icons li {
+  margin-top: 10px;
+}
+
+.footer-social .social-icons a {
+  font-size: 20px;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a span {
+  font-size: 15px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.footer-social .social-icons a:hover {
+  color: var(--shade);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--pink);
+}
+
+
+.click-button {
+  display: inline-block;
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.click-button:hover {
+  background-color: var(--shade);
+}
+
+/* FeedBack Page CSS */
+#feedback-main {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#feedback-main p {
+  margin: 15px;
+}
+
+.feedback-img {
+  margin-left: 20px;
+  width: 800px;
+  height: 900px;
+  box-shadow: 0px 0px 15px var(--shade);
+}
+.feedback-form {
+  height: 500px;
+  width: 800px;
+  font-size: 22px;
+}
+.form-content {
+  padding: 20px;
+  position: relative;
+  left: 100px;
+  height: 810px;
+  box-shadow: 0px 0px 10px var(--shade);
+}
+
+/* form text inputs */
+.generaltext {
+  width: 700px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  color: var(--white);
+  font-size: 22px;
+  box-shadow: 0px 0px 5px var(--shade);
+}
+
+/* Content Brief on Homepage CSS */
+#Brief {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 100px;
+  font-size: 25px;
+}
+
+.Brief-content {
+  text-align: center;
+}
+
+.Brief-content h2 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 28px;
+  color: var(--pink);
+  margin-bottom: 20px;
+}
+
+.Brief-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 500px); 
+  gap: 20px;
+  align-items: stretch; 
+  justify-content: center;
+}
+
+.Brief-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shade);
+  transition: transform 0.3s ease;
+  width: 500px; 
+}
+
+.Brief-item:hover {
+  transform: scale(1.05);
+}
+
+.Brief-item img {
+  width: 100%;
+  height: auto;
+}
+
+.Brief-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Brief-text h3,
+.Brief-text p {
+  color: var(--white);
+  text-shadow: 2px 2px 4px black;
+}
+
+/* About US Page CSS */
+#about {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  color: var(--white);
+  padding: 100px;
+  text-align: center;
+}
+
+#about h2 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 30px;
+  color: var(--pink);
+  margin-bottom: 25px;
+}
+
+#about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#about .members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+#about .member {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: var(--shade) 0 0 10px;
+  transition: ease;
+  transition: 0.5s;
+}
+.member:hover {
+  transform: scale(1.05);
+}
+
+#about .member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#about .member h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--pink);
+}
+
+#about .member p {
+  font-size: 16px;
+}
+
+.popup {
+  width: 700px;
+  height: 750px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: linear-gradient(135deg, var(--grad1), var(--grad2));
+  z-index: 1000;
+}
+.popup button {
+  position: relative;
+  left: 52%;
+  bottom: 760px;
+  border: none;
+  background: none;
+  color: var(--white);
+  font-size: 25px;
+}
+.popup button:hover {
+  color: var(--pink);
+}
+
+/* Research Page CSS */
+
+#research-main {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 100px;
+}
+#research-main h1 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 28px;
+  color: var(--pink);
+  margin-top: 20px;
+}
+
+
+.description {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.description b {
+  color: var(--pink);
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container .image {
+  width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shade);
+}
+
+.container .image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Blog Page CSS */
+#blog {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 100px;
+  text-align: center;
+}
+
+.blog-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--pink);
+}
+.blog-heading p {
+  padding: 20px;
+  color: var(--white);
+  margin-bottom: 50px;
+}
+
+.blog-heading span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-heading h3 {
+  font-size: 36px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-box {
+  width: 600px;
+  margin-bottom: 30px;
+  box-shadow: var(--shade) 0 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.blog-img img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-text {
+  padding: 20px;
+}
+
+.blog-text span {
+  font-size: 14px;
+  color: var(--white);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Product Page CSS */
+#products{
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  padding: 100px;
+  text-align: center;
+}
+
+#products .container{
+  color: var(--white);
+  height: 200px;
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+  
+}
+
+#products .product-container {
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#products .product-card {
+  background-color: linear-gradient(135deg, var(--grad1), var(--grad2));
+  width: 300px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shade);
+  overflow: hidden;
+  align-content: center;
+}
+
+#products .product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#products .product-details {
+  padding: 18px;
+}
+
+#products .product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#products .product-description {
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+#products .product-price {
+  font-size: 20px;
+  color: #f77062;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#products .buy-button {
+  background-color: #f77062;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#products .buy-button:hover {
+  background-color: var(--shade);
+}
